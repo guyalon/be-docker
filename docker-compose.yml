@@ -1,6 +1,6 @@
 version: "2"
 services:
-  practice_docker: 
+  be-docker: 
     image: guyalondocker/be-docker
     ports: 
       - 80:3000

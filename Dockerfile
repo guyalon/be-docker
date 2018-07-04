@@ -1,4 +1,4 @@
-FROM node:7
+FROM node:9
 RUN mkdir /be-docker
 ADD . /be-docker
 WORKDIR /be-docker
