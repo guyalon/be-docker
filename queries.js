@@ -6,7 +6,7 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = 'postgres://localhost:5432/twitter';
+var connectionString = process.env.DATABASE_URL;//'postgres://localhost:5432/twitter';
 var db = pgp(connectionString);
 
 // add query functions
@@ -55,7 +55,6 @@ function createTweet(req, res, next) {
             return next(err);
         });
 }
-
 function likeTweet(req,res,next){
   const data = {...req.params,...req.body};
   console.log(data);

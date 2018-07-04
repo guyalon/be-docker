@@ -1,15 +1,3 @@
-a. Tweet
-- text content
-- username
-- timestamp
-b. Like
-- username
-- post_id
-- timestamp
-c. ReTweet
-- post_id
-- username
-- timestamp
 
 function Twitter(){
     var username;
