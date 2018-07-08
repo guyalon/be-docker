@@ -8,12 +8,13 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=postgres://localhost:5432/twitter
+      - DATABASE_URL=postgresql://postgres:postgrespass@localhost:5432/twitter
       - PORT=3000   
   db:
     image: postgres
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=postgrespass
       - POSTGRES_DB=twitter
     command: ["psql","-U","postgres","-d","twitter","-a","-f","twitter.sql"]
+
