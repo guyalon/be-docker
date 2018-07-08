@@ -16,3 +16,4 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=
       - POSTGRES_DB=twitter
+    command: ["psql","-U","postgres","-d","twitter","-a","-f","twitter.sql"]
