@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08242d9b-4bf8-43d0-8934-ce53221a788c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/models/models.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="queries.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="queries.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="8" column="85" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -33,12 +33,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1531140772466" expanded="true" signature="11:12" ph="2" />
+                <marker date="1531140772466" expanded="true" signature="13:450" ph="services: &lt;2 keys&gt;" />
+                <marker date="1531140772466" expanded="true" signature="25:309" ph="be-docker: &lt;5 keys&gt;" />
+                <marker date="1531140772466" expanded="true" signature="48:71" ph="guyalondo…/be-docker" />
+                <marker date="1531140772466" expanded="true" signature="76:99" ph="ports: &lt;1 item&gt;" />
+                <marker date="1531140772466" expanded="true" signature="92:99" ph="80:3000" />
+                <marker date="1531140772466" expanded="true" signature="113:176" ph="bash -c '…npm start'" />
+                <marker date="1531140772466" expanded="true" signature="181:203" ph="depends_on: &lt;1 item&gt;" />
+                <marker date="1531140772466" expanded="true" signature="201:203" ph="db" />
+                <marker date="1531140772466" expanded="true" signature="208:309" ph="environment: &lt;2 items&gt;" />
+                <marker date="1531140772466" expanded="true" signature="229:291" ph="DATABASE_…32/twitter" />
+                <marker date="1531140772466" expanded="true" signature="300:309" ph="PORT=3000" />
+                <marker date="1531140772466" expanded="true" signature="315:450" ph="db: &lt;2 keys&gt;" />
+                <marker date="1531140772466" expanded="true" signature="330:343" ph="postgres:10.4" />
+                <marker date="1531140772466" expanded="true" signature="348:450" ph="environment: &lt;3 items&gt;" />
+                <marker date="1531140772466" expanded="true" signature="369:389" ph="POSTGRES_USER=docker" />
+                <marker date="1531140772466" expanded="true" signature="398:422" ph="POSTGRES_…ORD=docker" />
+                <marker date="1531140772466" expanded="true" signature="431:450" ph="POSTGRES_DB=twitter" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -81,8 +100,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="495">
+              <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -114,11 +133,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/twitter.sql" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/public/javascripts/models/models.js" />
-        <option value="$PROJECT_DIR$/queries.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/queries.js" />
       </list>
     </option>
   </component>
@@ -212,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530643324081</updated>
-      <workItem from="1530643325788" duration="12916000" />
+      <workItem from="1530643325788" duration="13554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12916000" />
+    <option name="totallyTimeSpent" value="13554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -271,14 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -299,7 +310,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1531140772466" expanded="true" signature="11:12" ph="2" />
+            <marker date="1531140772466" expanded="true" signature="13:450" ph="services: &lt;2 keys&gt;" />
+            <marker date="1531140772466" expanded="true" signature="25:309" ph="be-docker: &lt;5 keys&gt;" />
+            <marker date="1531140772466" expanded="true" signature="48:71" ph="guyalondo…/be-docker" />
+            <marker date="1531140772466" expanded="true" signature="76:99" ph="ports: &lt;1 item&gt;" />
+            <marker date="1531140772466" expanded="true" signature="92:99" ph="80:3000" />
+            <marker date="1531140772466" expanded="true" signature="113:176" ph="bash -c '…npm start'" />
+            <marker date="1531140772466" expanded="true" signature="181:203" ph="depends_on: &lt;1 item&gt;" />
+            <marker date="1531140772466" expanded="true" signature="201:203" ph="db" />
+            <marker date="1531140772466" expanded="true" signature="208:309" ph="environment: &lt;2 items&gt;" />
+            <marker date="1531140772466" expanded="true" signature="229:291" ph="DATABASE_…32/twitter" />
+            <marker date="1531140772466" expanded="true" signature="300:309" ph="PORT=3000" />
+            <marker date="1531140772466" expanded="true" signature="315:450" ph="db: &lt;2 keys&gt;" />
+            <marker date="1531140772466" expanded="true" signature="330:343" ph="postgres:10.4" />
+            <marker date="1531140772466" expanded="true" signature="348:450" ph="environment: &lt;3 items&gt;" />
+            <marker date="1531140772466" expanded="true" signature="369:389" ph="POSTGRES_USER=docker" />
+            <marker date="1531140772466" expanded="true" signature="398:422" ph="POSTGRES_…ORD=docker" />
+            <marker date="1531140772466" expanded="true" signature="431:450" ph="POSTGRES_DB=twitter" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -307,14 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -331,6 +353,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="69" lean-forward="true" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="85" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="85" />
           <folding />
         </state>
       </provider>

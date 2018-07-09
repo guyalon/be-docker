@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   be-docker: 
     image: guyalondocker/be-docker
@@ -8,12 +8,10 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=postgresql://docker:docker@localhost:5432/twitter
+      - DATABASE_URL=postgres://docker:docker@localhost:5432/twitter
       - PORT=3000   
   db:
     image: postgres:10.4
-    volumes:
-      - ./data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
