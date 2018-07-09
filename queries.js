@@ -95,11 +95,26 @@ function reTweet(req,res,next){
         });
 
 }
+function getRetweets(req, res, next) {
+    db.any('select * from retweets')
+        .then(function (data) {
+            res.status(200)
+                .json({
+                    status: 'success',
+                    data: data,
+                    message: 'Retrieved ALL Retweets'
+                });
+        })
+        .catch(function (err) {
+            return next(err);
+        });
+}
 
 module.exports = {
   getTweets: getTweets,
   getTweet: getTweet,
   createTweet: createTweet,
   likeTweet: likeTweet,
-  reTweet: reTweet
+  reTweet: reTweet,
+  getRetweets:getRetweets
 };
