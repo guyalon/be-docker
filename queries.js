@@ -56,6 +56,7 @@ function createTweet(req, res, next) {
         });
 }
 function likeTweet(req,res,next){
+    console.log("this is like tweets",req);
   const data = {...req.params,...req.body};
   console.log(data);
   db.none('insert into likes(like_user, tweet_id,created_at,updated_at)'+
