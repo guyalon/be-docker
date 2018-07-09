@@ -1,13 +1,9 @@
-#!/bin/bash
-set -e
+    CREATE USER postgres;
+    DROP DATABASE IF EXISTS twitter;
+    CREATE DATABASE twitter;
+    GRANT ALL PRIVILEGES ON DATABASE twitter TO postgres;
 
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
-    CREATE USER $POSTGRES_USER;
-    DROP DATABASE IF EXISTS $POSTGRES_DB;
-    CREATE DATABASE $POSTGRES_DB;
-    GRANT ALL PRIVILEGES ON DATABASE $POSTGRES_DB TO $POSTGRES_USER;
-
-    \c $POSTGRES_DB;
+    \c twitter;
 
     CREATE TABLE tweets (
       ID SERIAL PRIMARY KEY,
@@ -44,5 +40,3 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-E
 
     INSERT INTO likes (like_user, tweet_id, created_at, updated_at)
       VALUES ('TweeterBro', 1, now(),now());
-
-EOSQL
