@@ -12,6 +12,8 @@ services:
       - PORT=3000   
   db:
     image: postgres:10.4
+    volumes:
+      - data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
