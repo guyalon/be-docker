@@ -1,8 +1,8 @@
---    CREATE USER postgres;
---    DROP DATABASE IF EXISTS twitter;
---    CREATE DATABASE twitter;
---    GRANT ALL PRIVILEGES ON DATABASE twitter TO postgres;
---
+    CREATE USER postgres;
+    DROP DATABASE IF EXISTS twitter;
+    CREATE DATABASE twitter;
+    GRANT ALL PRIVILEGES ON DATABASE twitter TO postgres;
+
 
     \c twitter;
 
